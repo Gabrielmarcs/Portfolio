@@ -31,7 +31,7 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
-ScollReveal({
+ScrollReveal({
     distance: '80px',
     duration: 2000,
     delay: 200,

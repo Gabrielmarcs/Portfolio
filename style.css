@@ -59,6 +59,9 @@ section{
     margin-left: 4rem;
     font-weight: 700;
 }
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
 
 .navbar a:hover, 
 .navbar a.active{
@@ -70,10 +73,12 @@ section{
     color: var(--text-color);
 }
 
+
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse; /* Inverte a direção dos elementos */
 }
 
 .home-content h3{
@@ -100,6 +105,7 @@ span{
 }
 
 .home-img img{
+    order: 1;
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -143,7 +149,7 @@ span{
 
 .btn{
     display: inline-block;
-    display: 1rem 2.8rem;
+    padding: 1rem 2.8rem;
     background: #797676;
     border-radius: 4rem;
     box-shadow: 0 0 1rem black;
@@ -156,6 +162,7 @@ span{
 
 .btn:hover{
     box-shadow: none;
+    background-color: #5e5e5e;
 }
 
 .about{
@@ -293,6 +300,10 @@ span{
 @media (max-width: 768px){
     #menu-icon{
         display: block;
+    }
+
+    #menu-icon:hover{
+        cursor: pointer;
     }
 
     .navbar{
